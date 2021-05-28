@@ -15,4 +15,7 @@ def return_result(choice_1, choice_2):
     winner = game.result()
     return render_template('result.html', winner=winner, choice_1 = choice_1, choice_2 = choice_2)
 
+@app.route('/welcome')
+def welcome():
+    return render_template('welcome.html', title="Welcome - Rock, Paper, Scissors!")
 
