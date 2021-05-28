@@ -17,6 +17,9 @@ class Game:
 
         elif self.player_1.choice == "paper" and self.player_2.choice == "rock":
             return self.player_win_output(self.player_1)
+        
+        elif self.player_1.choice == self.player_2.choice:
+            return None
 
         return self.player_win_output(self.player_2)
 

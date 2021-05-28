@@ -16,7 +16,7 @@ class TestGame(unittest.TestCase):
         actual = self.game_1.result()
         self.assertEqual(expected, actual)
 
-    # def test_game_2_returns_none(self):
-    #     expected = None
-    #     actual = self.game_2.result
-    #     self.assertEqual(expected, actual)
+    def test_game_2_returns_none(self):
+        expected = None
+        actual = self.game_2.result()
+        self.assertEqual(expected, actual)
