@@ -9,10 +9,10 @@ class Game:
         return f'{player.name} wins by playing {player.choice}'
 
     def result(self):
-        if self.player_1.choice == "rock" and self.player_2.choice == "sissors":
+        if self.player_1.choice == "rock" and self.player_2.choice == "scissors":
             return self.player_win_output(self.player_1)
 
-        elif self.player_1.choice == "sissors" and self.player_2.choice == "paper":
+        elif self.player_1.choice == "scissors" and self.player_2.choice == "paper":
             return self.player_win_output(self.player_1)
 
         elif self.player_1.choice == "paper" and self.player_2.choice == "rock":

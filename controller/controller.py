@@ -5,7 +5,7 @@ from src.player import Player
 
 @app.route("/")
 def home():
-    return render_template('home.html', title="Rock, Paper, Sissors!")
+    return render_template('home.html', title="Rock, Paper, Scissors!")
 
 @app.route('/<choice_1>/<choice_2>')
 def return_result(choice_1, choice_2):
