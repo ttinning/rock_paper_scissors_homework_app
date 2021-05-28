@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 from app import app
 from src.game import Game
 from src.player import Player
@@ -13,4 +13,6 @@ def return_result(choice_1, choice_2):
     player_2 = Player("player_2", choice_2)
     game = Game(player_1, player_2)
     winner = game.result()
-    return f'{winner}'
+    return render_template('result.html', winner=winner, choice_1 = choice_1, choice_2 = choice_2)
+
+
