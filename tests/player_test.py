@@ -11,7 +11,7 @@ class TestPlayer(unittest.TestCase):
         actual = self.player.name
         self.assertEqual(expected, actual)
 
-    def player_has_made_a_choice(self):
+    def test_player_has_a_choice(self):
         expected = "paper"
         actual = self.player.choice
         self.assertEqual(expected, actual)
