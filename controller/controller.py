@@ -19,3 +19,15 @@ def return_result(choice_1, choice_2):
 def welcome():
     return render_template('welcome.html', title="Welcome - Rock, Paper, Scissors!")
 
+@app.route('/play')
+def play():
+    return render_template('play.html', title='Rock, Paper, Scissors')
+
+@app.route('/play', methods=["POST"])
+def game_play():
+    player_1 = Player(request.form["player_1_name"], request.form["player_1_choice"])
+    player_2 = Player(None, None)
+    game = Game(player_1, player_2)
+    game_winner = game.result()
+    return render_template('result.html', winner=game_winner, choice_1=player_1.choice, choice_2=player_2.choice)
+

@@ -11,6 +11,7 @@ class Game:
         return f'{player.name} wins by playing {player.choice}'
 
     def result(self):
+        self.check_for_player()
         if self.player_1.choice == "rock" and self.player_2.choice == "scissors":
             return self.player_win_output(self.player_1)
 

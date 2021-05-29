@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<section>
+    <section class="input_form">
+        <h2>Are you ready?</h2>
+        <p>Enter your name and pick your attack!</p>
+
+        <form action="/play" method="post">
+            <input type="text" name="player_1_name" placeholder="Enter your name:">
+            <select name="player_1_choice">
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+            </select>
+            <input type="submit" value="Play">
+        </form>
+    </section>
+</section>
+
+
+
+{% endblock %}
