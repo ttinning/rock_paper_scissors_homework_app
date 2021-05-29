@@ -1,10 +1,11 @@
+import random
+
 class Game:
 
     def __init__(self, player_1, player_2):
         self.player_1 = player_1
         self.player_2 = player_2
-        
-
+        self.game_list = ["rock", "paper", "scissors"]
     
     def player_win_output(self, player):
         return f'{player.name} wins by playing {player.choice}'
@@ -24,4 +25,14 @@ class Game:
 
         return self.player_win_output(self.player_2)
 
+    def check_for_player(self):
+        if self.player_2.choice == None:
+            self.get_random_computer_player(self.player_2)
+
+    def get_random_computer_player(self, player_2):
+        player_2.choice = random.choice(self.game_list)
+        player_2.name = "Grand Master"
+
+
+    
 
