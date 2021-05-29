@@ -8,7 +8,7 @@ class Game:
         self.game_list = ["rock", "paper", "scissors"]
     
     def player_win_output(self, player):
-        return f'{player.name} wins by playing {player.choice}'
+        return f'{player.name} by playing {player.choice}!'
 
     def result(self):
         self.check_for_player()

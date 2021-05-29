@@ -41,16 +41,53 @@ header > nav {
 }
 
 .welcome_heading {
-    padding-left: 25px;    
+    padding-left: 35px;    
     padding-bottom: 15px;
 }
 
 .welcome_page{
-    padding-left: 25px;
+    padding-left: 35px;
 }
 
 
 .welcome_bottom {
     text-align: center;
     margin-top: 50px;
+}
+
+.input_form {
+    padding-left: 35px;
+}
+
+#results_page {
+    padding-left: 35px;
+}
+
+
+#play_button {
+    color: white; 
+    background-color: darkslategray; 
+    border: 2px solid darkslategrey; 
+    border-radius: 5px; 
+    text-transform: uppercase; 
+    padding: 11px;
+}
+
+#name_selector {
+    color: darkslategrey; 
+    background-color: transparent; 
+    border: 2px solid darkslategrey; 
+    border-radius: 5px; 
+    padding: 10px;
+}
+
+#choice_selector {
+    color: darkslategrey; 
+    background-color: transparent; 
+    border: 2px solid darkslategrey; 
+    border-radius: 5px; 
+    padding: 10px;
+}
+#play_button:hover {
+    color: gray;
 }
