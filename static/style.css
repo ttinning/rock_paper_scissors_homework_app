@@ -20,7 +20,8 @@ header > nav > a {
     border-style: solid;
     padding: 15px;
     border-radius: 10px;
-    transition-duration: 0.2s;    
+    transition-duration: 0.2s;  
+    margin-left: 15px;
 }
 
 a:hover {
@@ -40,14 +41,16 @@ header > nav {
 }
 
 .welcome_heading {
-    padding: 20px;    
+    padding-left: 25px;    
+    padding-bottom: 15px;
 }
 
-p {
-    padding-left:25px;
+.welcome_page{
+    padding-left: 25px;
 }
 
-h3 {
+
+.welcome_bottom {
     text-align: center;
     margin-top: 50px;
 }
