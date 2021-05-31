@@ -98,3 +98,24 @@ header > nav {
 #play_button:hover {
     color: Gray;
 }
+
+#winner {
+    animation: animate 0.5s linear infinite;
+    color: darkslategray;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#results_page {
+    text-align: center;
+}
